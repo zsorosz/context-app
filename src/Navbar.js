@@ -15,7 +15,7 @@ class Navbar extends Component {
     static contextType = ThemeContext;
     render(){
         const { classes } = this.props;
-        const { isDarkMode } = this.context;
+        const { isDarkMode, toggleTheme } = this.context;
         return(
             <div className={classes.root}>
                 <AppBar position="static" color={isDarkMode ? "default" : "primary"}>
@@ -26,7 +26,7 @@ class Navbar extends Component {
                         <Typography className={classes.title} variant="h6" color="inherit">
                             App Title
                         </Typography>
-                        <Switch />
+                        <Switch onChange={toggleTheme} />
                         <div className={classes.grow}></div>
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
