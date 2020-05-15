@@ -8,9 +8,15 @@ const styles = theme => ({
     grow: {
         flexGrow: 1
     },
-    menuBotton: {
+    menuButton: {
         marginLeft: -12,
-        marginRight: 20
+        marginRight: 10,
+        display: "flex",
+        justifyContent: "center",
+        height: "2rem",
+        width: "2rem",
+        backgroundColor: "blue",
+        borderRadius: "50%"
     },
     title: {
         display: "none",
@@ -60,6 +66,11 @@ const styles = theme => ({
                 width: 200
             }
         }
+    },
+    flag: {
+        fontSize: ".8rem",
+        color: "white",
+        transform: "translateY(-2px)"
     }
 });
 
